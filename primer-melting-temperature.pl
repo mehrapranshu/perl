@@ -26,11 +26,13 @@ print "\nFrequency of nucleotides\n";
 print "A=$a T=$t G=$g C=$c\n";
 
 #using the melting temperature formula
+#if the primer length is less than 14 nucleotides
 if ($length < 14){
 	$tm = ($a + $t)*2 + ($g + $c)*4;
 	print "\nThe melting temperature of the given sequence = ";
 	printf ("%.2f",$tm);
 	print " degree Celsius.\n\n";
+#if the primer length is more than or equal to 14 nucleotides
 }elsif ($length > 13) { 
 	$tm = 64.9 + 41 *(($g + $c - 16.4)/($a + $t + $g + $c));
 	printf "\nThe melting temperature of the given sequence = ";
