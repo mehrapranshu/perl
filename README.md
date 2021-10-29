@@ -1,2 +1,2 @@
 # perl
-BioPerl programs
+Basic Perl and BioPerl programs
