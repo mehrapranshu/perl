@@ -1,5 +1,5 @@
-#This perl program takes the DNA sequnece as the input and prints out the frequency of the N bases.
 #!/usr/bin/perl -w
+#This perl program takes the DNA sequnece as the input and prints out the frequency of the N bases.
 
 #User input
 print "\nEnter the DNA sequence:\n";
@@ -16,7 +16,7 @@ $t = ($dna =~tr/Tt//);
 $g = ($dna =~tr/Gg//);
 $c = ($dna =~tr/Cc//);
 
-#calculating the length of the DNA, Number of N bases and non-bases (anything apart from A,T,G,C).
+#calculating the length of the DNA, Number of N bases and non-bases (anything apart from A,T,G,C)
 $length = length($dna);
 $basecount = ($dna =~ tr/ATGCatgc//);
 $nonbase = $length - $basecount;
